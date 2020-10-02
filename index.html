@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Student</title>
+</head>
+<style>
+#loader {
+	border: 16px solid black;
+	border-top: 16px solid green;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin: 30vh auto;
+	animation: 1s spin linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.err {
+	margin: 50vh auto;
+}
+</style>
+<body>
+
+	<div id="errorMessage"></div>
+	<div id="mainDiv">
+		<div id="loader"></div>
+		<div id="text"></div>
+	</div>
+
+
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
